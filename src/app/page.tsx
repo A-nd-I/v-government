@@ -4,6 +4,7 @@ import UseCases from "@/components/UseCases"
 import HowItWorks from "@/components/HowItWorks"
 import Plans from "@/components/Plans"
 import Contact from "@/components/Contact"
+import Simulator from "@/components/Simulator"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <UseCases />
       <HowItWorks />
       <Plans />
+      <Simulator />
       <Contact />
     </>
   )
