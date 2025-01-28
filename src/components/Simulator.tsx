@@ -55,7 +55,8 @@ const Simulator: React.FC = () => {
             >
                 Simulate Impact
             </button>
-            {result && <p className="mt-4 p-4 bg-gray-100 rounded">{result}</p>}
+            {result && <p className="mt-4 p-4 bg-gray-100 text-black rounded">{result}</p>}
+
         </div>
     );
 };
