@@ -7,8 +7,11 @@ import HowItWorks from "@/components/HowItWorks";
 import Plans from "@/components/Plans";
 import Contact from "@/components/Contact";
 import Simulator from "@/components/Simulator";
-import MapView from "@/components/MapView";
+
 import { useEffect, useState } from "react";
+import EconomicModeling from "@/components/EconomicModeling";
+import OilPriceChart from "@/components/EconomicsDashboard";
+import EconomicsDashboard from "@/components/EconomicsDashboard";
 
 export default function Home() {
   const [data, setData] = useState<any[]>([]);
@@ -41,12 +44,8 @@ export default function Home() {
       <HowItWorks />
       <Plans />
       <Simulator />
-      {/* Muestra un mensaje mientras los datos están cargando */}
-      {loading ? (
-        <p className="text-center text-lg">Loading map data...</p>
-      ) : (
-        <MapView data={data} />
-      )}
+      <EconomicsDashboard />
+      
       <Contact />
     </>
   );
